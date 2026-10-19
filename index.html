@@ -10,7 +10,7 @@
 <style>
 :root{color-scheme:dark;--paper:#f4f0de;--muted:#b6c1b1;--line:#ffffff20;--green:#cfdfa7;--amber:#e8bf83;--panel:rgba(19,31,25,.91)}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#192a24;color:var(--paper);font-family:Inter,"Noto Sans TC","Microsoft JhengHei",sans-serif}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}button,select{color:inherit}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--green);outline-offset:4px}button{border:1px solid var(--line);background:#ffffff09;border-radius:9px;padding:10px 13px;transition:background .18s,border-color .18s}button:hover{background:#ffffff15;border-color:#ffffff50}button[aria-pressed=true],.selected{background:#cbdba421!important;border-color:#cbdba488!important;color:#e8f2d0!important}a{color:var(--green)}[hidden]{display:none!important}#world{position:fixed;inset:0;outline:none;touch-action:none}#world canvas{display:block;width:100%;height:100%}.vignette{position:fixed;inset:0;pointer-events:none;background:linear-gradient(180deg,#07150f80,transparent 22%,transparent 63%,#07150f8a),radial-gradient(ellipse at 45% 45%,transparent 35%,#04110c38)}
-.topbar{position:fixed;top:0;left:0;right:0;padding:27px 34px;display:flex;justify-content:space-between;align-items:center;gap:16px;pointer-events:none}.brand,.tools{display:flex;align-items:center;gap:12px;pointer-events:auto}.brand-mark{width:39px;height:39px;border:1px solid #d4e1ba66;border-radius:50%;display:grid;place-items:center;color:var(--green)}.brand strong{display:block;font:600 19px Georgia,serif;letter-spacing:.5px}.brand small{display:block;color:#d4ddca;font-size:10px;letter-spacing:3px;margin-top:5px}.tools{flex-wrap:wrap;justify-content:flex-end}.badge{background:#13251c99;border:1px solid #ffffff20;border-radius:30px;padding:7px 11px;font-size:11px;color:#d4e3c1;backdrop-filter:blur(12px)}.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#c5dd9b;margin-right:6px}.icon-btn{background:#18271dbb;backdrop-filter:blur(12px);min-height:39px;font-size:12px}.caption{position:fixed;left:36px;bottom:76px;max-width:calc(100vw - 450px);pointer-events:none;text-shadow:0 2px 20px #0008}.eyebrow{font-size:10px;letter-spacing:4px;color:#d8e1c5}.caption h1{font-family:Georgia,"Noto Serif TC",serif;font-weight:400;font-size:clamp(30px,4vw,61px);line-height:1.15;letter-spacing:3px;margin:14px 0}.caption p{font-size:13px;line-height:1.9;color:#e1e4d8;margin:0}.caption .location{display:inline-block;margin-top:21px;padding:7px 0;border-top:1px solid #d4ddbb70;font-size:11px;letter-spacing:2px}.footer{position:fixed;bottom:0;left:0;right:0;padding:17px 35px;display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1px;color:#d6ddcbbb;pointer-events:none;gap:10px}.footer kbd{font-family:inherit;border:1px solid #e1e8d13b;border-radius:4px;padding:3px 5px;margin-right:3px}.panel{position:fixed;right:28px;top:106px;bottom:65px;width:335px;max-height:690px;display:flex;flex-direction:column;background:var(--panel);border:1px solid #d1dfb62e;border-radius:16px;backdrop-filter:blur(22px);box-shadow:0 18px 80px #0003;overflow:hidden}.panel-head{padding:21px 21px 16px;display:flex;justify-content:space-between;align-items:center}.panel-head small{font-size:9px;color:var(--green);letter-spacing:3px}.panel-head h2{font-size:17px;font-weight:500;margin:7px 0 0}.panel-head .number{font:italic 28px Georgia;color:#a7bb8877}.tabs{padding:0 15px;display:flex;border-bottom:1px solid var(--line);gap:4px}.tabs button{flex:1;border:0;border-radius:0;background:none;padding:12px 6px;color:var(--muted);font-size:12px;border-bottom:2px solid transparent}.tabs button[aria-selected=true]{color:var(--paper);border-bottom-color:var(--green)}.tabcontent{padding:21px;overflow-y:auto;scrollbar-width:thin}.section-label{font-size:10px;color:var(--muted);letter-spacing:2px;margin:0 0 13px}.views{display:grid;gap:8px}.view-btn{text-align:left;display:flex;align-items:center;gap:13px;padding:12px}.view-btn .glyph{width:36px;height:36px;border-radius:8px;background:#ffffff09;display:grid;place-items:center;color:var(--amber);font-size:21px}.view-btn strong{font-size:12px;font-weight:500;display:block}.view-btn small{display:block;font-size:10px;color:var(--muted);margin-top:5px}.divider{height:1px;background:var(--line);margin:21px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:12px 0}.row label,.row>span{font-size:12px}.segments{display:flex;gap:5px}.segments button{padding:8px 11px;font-size:11px}.note{font-size:11px;line-height:1.8;color:var(--muted)}select{background:#24332a;border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:11px}input[type=range]{width:100%;height:4px;accent-color:var(--green);cursor:pointer;margin:15px 0 8px}input[type=checkbox]{accent-color:var(--green)}.sound-title{font-size:13px}.sound-title small{color:var(--muted);font-size:11px}.sound-value{font-size:11px;color:var(--green)}.sound-block{margin:18px 0 23px}.wide{width:100%}.primary{background:var(--green);border-color:var(--green);color:#1a2b1c;font-weight:600}.primary:hover{background:#dfedbd}.text-input{width:100%;border:1px solid #d8e4bf38;border-radius:7px;background:#09160e66;color:var(--paper);padding:12px;font-size:12px;margin:8px 0 10px}#playerShell{margin-top:0;border-radius:8px;overflow:hidden;background:#09140e;min-height:200px;display:grid;place-items:center}#musicDock{max-width:calc(100vw - 28px);position:fixed;left:34px;top:105px;width:300px;z-index:7;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#13251eee;box-shadow:0 12px 36px #0004}.dock-title{display:flex;justify-content:space-between;align-items:center;padding:6px 10px;font-size:9px;letter-spacing:1.5px;color:var(--muted)}.dock-title button{padding:5px 8px;border:0}.music-active .caption{max-width:calc(100vw - 450px)}#playerShell iframe{display:block;width:100%;height:210px;border:0}#playerPlaceholder{font-size:12px;color:var(--muted);padding:20px;text-align:center;line-height:1.8}#musicStatus{min-height:24px;overflow-wrap:anywhere}#toast{position:fixed;left:50%;bottom:64px;transform:translateX(-50%);background:#14251eef;border:1px solid #e0e8cf40;border-radius:9px;padding:12px 18px;font-size:12px;z-index:8;max-width:min(92vw,600px);line-height:1.7;pointer-events:none}.overlay{position:fixed;inset:0;background:radial-gradient(ellipse at 35% 45%,#12251b88,#0a1713ed);z-index:20;display:grid;place-items:center;padding:24px;backdrop-filter:blur(8px)}.intro{max-width:510px;text-align:center}.intro .brand-mark{margin:auto;width:62px;height:62px;font-size:29px}.intro h2{font:400 clamp(38px,6vw,64px) Georgia,serif;margin:28px 0 12px}.intro .cn{font-size:16px;letter-spacing:8px;margin:0 0 25px}.intro p{color:#c5cebc;font-size:13px;line-height:2}.intro button{min-width:210px;padding:15px 24px;margin:20px 0 10px}.intro .loading{font-size:11px;color:#aabc9e;min-height:40px}.intro .footnote{font-size:10px;max-width:400px;margin:auto;line-height:1.9;color:#a8b7a0}dialog{max-width:520px;width:calc(100% - 36px);background:#17271f;color:var(--paper);border:1px solid #d8e7b844;border-radius:16px;padding:28px;line-height:1.9}dialog::backdrop{background:#04120bb8;backdrop-filter:blur(8px)}dialog h2{font-size:21px;margin-top:0}dialog p,dialog li{font-size:13px;color:#d0dac6}dialog button{float:right}#mobilePad{position:fixed;left:20px;bottom:75px;display:none;grid-template-columns:repeat(3,42px);gap:5px;z-index:3}#mobilePad button{padding:10px;background:#17291dc9;touch-action:none}#mobilePad button:first-child{grid-column:2}#mobilePad button:nth-child(2){grid-column:1}.clean .panel,.clean .caption,.clean .footer,.clean .brand,.clean #gpuBadge,.clean #helpBtn{display:none}.clean .topbar{justify-content:flex-end}.clean #mobilePad{opacity:.45}#reticle{position:fixed;left:50%;top:50%;width:4px;height:4px;background:#fff9;border-radius:50%;pointer-events:none;display:none}body.locked #reticle{display:block}
+.topbar{position:fixed;top:0;left:0;right:0;padding:27px 34px;display:flex;justify-content:space-between;align-items:center;gap:16px;pointer-events:none}.brand,.tools{display:flex;align-items:center;gap:12px;pointer-events:auto}.brand-mark{width:39px;height:39px;border:1px solid #d4e1ba66;border-radius:50%;display:grid;place-items:center;color:var(--green)}.brand strong{display:block;font:600 19px Georgia,serif;letter-spacing:.5px}.brand small{display:block;color:#d4ddca;font-size:10px;letter-spacing:3px;margin-top:5px}.tools{flex-wrap:wrap;justify-content:flex-end}.badge{background:#13251c99;border:1px solid #ffffff20;border-radius:30px;padding:7px 11px;font-size:11px;color:#d4e3c1;backdrop-filter:blur(12px)}.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#c5dd9b;margin-right:6px}.icon-btn{background:#18271dbb;backdrop-filter:blur(12px);min-height:39px;font-size:12px}.caption{position:fixed;left:36px;bottom:76px;max-width:calc(100vw - 450px);pointer-events:none;text-shadow:0 2px 20px #0008}.eyebrow{font-size:10px;letter-spacing:4px;color:#d8e1c5}.caption h1{font-family:Georgia,"Noto Serif TC",serif;font-weight:400;font-size:clamp(30px,4vw,61px);line-height:1.15;letter-spacing:3px;margin:14px 0}.caption p{font-size:13px;line-height:1.9;color:#e1e4d8;margin:0}.caption .location{display:inline-block;margin-top:21px;padding:7px 0;border-top:1px solid #d4ddbb70;font-size:11px;letter-spacing:2px}.footer{position:fixed;bottom:0;left:0;right:0;padding:17px 35px;display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1px;color:#d6ddcbbb;pointer-events:none;gap:10px}.footer kbd{font-family:inherit;border:1px solid #e1e8d13b;border-radius:4px;padding:3px 5px;margin-right:3px}.panel{position:fixed;right:28px;top:106px;bottom:65px;width:335px;max-height:690px;display:flex;flex-direction:column;background:var(--panel);border:1px solid #d1dfb62e;border-radius:16px;backdrop-filter:blur(22px);box-shadow:0 18px 80px #0003;overflow:hidden}.panel-head{padding:21px 21px 16px;display:flex;justify-content:space-between;align-items:center}.panel-head small{font-size:9px;color:var(--green);letter-spacing:3px}.panel-head h2{font-size:17px;font-weight:500;margin:7px 0 0}.panel-head .number{font:italic 28px Georgia;color:#a7bb8877}.tabs{padding:0 15px;display:flex;border-bottom:1px solid var(--line);gap:4px}.tabs button{flex:1;border:0;border-radius:0;background:none;padding:12px 6px;color:var(--muted);font-size:12px;border-bottom:2px solid transparent}.tabs button[aria-selected=true]{color:var(--paper);border-bottom-color:var(--green)}.tabcontent{padding:21px;overflow-y:auto;scrollbar-width:thin}.section-label{font-size:10px;color:var(--muted);letter-spacing:2px;margin:0 0 13px}.views{display:grid;gap:8px}.view-btn{text-align:left;display:flex;align-items:center;gap:13px;padding:12px}.view-btn .glyph{width:36px;height:36px;border-radius:8px;background:#ffffff09;display:grid;place-items:center;color:var(--amber);font-size:21px}.view-btn strong{font-size:12px;font-weight:500;display:block}.view-btn small{display:block;font-size:10px;color:var(--muted);margin-top:5px}.divider{height:1px;background:var(--line);margin:21px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:12px 0}.row label,.row>span{font-size:12px}.segments{display:flex;gap:5px}.segments button{padding:8px 11px;font-size:11px}.note{font-size:11px;line-height:1.8;color:var(--muted)}select{background:#24332a;border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:11px}input[type=range]{width:100%;height:4px;accent-color:var(--green);cursor:pointer;margin:15px 0 8px}input[type=checkbox]{accent-color:var(--green)}.sound-title{font-size:13px}.sound-title small{color:var(--muted);font-size:11px}.sound-value{font-size:11px;color:var(--green)}.sound-block{margin:18px 0 23px}.wide{width:100%}.primary{background:var(--green);border-color:var(--green);color:#1a2b1c;font-weight:600}.primary:hover{background:#dfedbd}.text-input{width:100%;border:1px solid #d8e4bf38;border-radius:7px;background:#09160e66;color:var(--paper);padding:12px;font-size:12px;margin:8px 0 10px}#playerShell{margin-top:0;border-radius:8px;overflow:hidden;background:#09140e;min-height:200px;display:grid;place-items:center}#musicDock{max-width:calc(100vw - 28px);position:fixed;left:34px;top:105px;width:300px;z-index:7;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#13251eee;box-shadow:0 12px 36px #0004}.dock-title{display:flex;justify-content:space-between;align-items:center;padding:6px 10px;font-size:9px;letter-spacing:1.5px;color:var(--muted)}.dock-notice{font-size:11px;line-height:1.8;margin:0;padding:10px 12px;color:#f0d6a4;overflow-wrap:anywhere}.dock-actions{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;gap:10px}.dock-actions button,.dock-actions a{font-size:10px}.dock-actions button{padding:6px 8px}.dock-title button{padding:5px 8px;border:0}.music-active .caption{max-width:calc(100vw - 450px)}#playerShell iframe{display:block;width:100%;height:210px;border:0}#playerPlaceholder{font-size:12px;color:var(--muted);padding:20px;text-align:center;line-height:1.8}#musicStatus{min-height:24px;overflow-wrap:anywhere}#toast{position:fixed;left:50%;bottom:64px;transform:translateX(-50%);background:#14251eef;border:1px solid #e0e8cf40;border-radius:9px;padding:12px 18px;font-size:12px;z-index:8;max-width:min(92vw,600px);line-height:1.7;pointer-events:none}.overlay{position:fixed;inset:0;background:radial-gradient(ellipse at 35% 45%,#12251b88,#0a1713ed);z-index:20;display:grid;place-items:center;padding:24px;backdrop-filter:blur(8px)}.intro{max-width:510px;text-align:center}.intro .brand-mark{margin:auto;width:62px;height:62px;font-size:29px}.intro h2{font:400 clamp(38px,6vw,64px) Georgia,serif;margin:28px 0 12px}.intro .cn{font-size:16px;letter-spacing:8px;margin:0 0 25px}.intro p{color:#c5cebc;font-size:13px;line-height:2}.intro button{min-width:210px;padding:15px 24px;margin:20px 0 10px}.intro .loading{font-size:11px;color:#aabc9e;min-height:40px}.intro .footnote{font-size:10px;max-width:400px;margin:auto;line-height:1.9;color:#a8b7a0}dialog{max-width:520px;width:calc(100% - 36px);background:#17271f;color:var(--paper);border:1px solid #d8e7b844;border-radius:16px;padding:28px;line-height:1.9}dialog::backdrop{background:#04120bb8;backdrop-filter:blur(8px)}dialog h2{font-size:21px;margin-top:0}dialog p,dialog li{font-size:13px;color:#d0dac6}dialog button{float:right}#mobilePad{position:fixed;left:20px;bottom:75px;display:none;grid-template-columns:repeat(3,42px);gap:5px;z-index:3}#mobilePad button{padding:10px;background:#17291dc9;touch-action:none}#mobilePad button:first-child{grid-column:2}#mobilePad button:nth-child(2){grid-column:1}.clean .panel,.clean .caption,.clean .footer,.clean .brand,.clean #gpuBadge,.clean #helpBtn{display:none}.clean .topbar{justify-content:flex-end}.clean #mobilePad{opacity:.45}#reticle{position:fixed;left:50%;top:50%;width:4px;height:4px;background:#fff9;border-radius:50%;pointer-events:none;display:none}body.locked #reticle{display:block}
 noscript{position:fixed;z-index:100;padding:20px;background:#17271f;inset:0}
 @media(max-width:760px){.topbar{padding:18px}.brand strong{font-size:16px}.brand small{letter-spacing:2px;font-size:8px}.brand-mark{width:32px;height:32px}.tools{gap:6px}.badge{font-size:9px;padding:7px}.icon-btn{font-size:10px;padding:8px}.panel{right:14px;top:85px;bottom:65px;width:300px;max-height:calc(100dvh - 155px)}.caption{left:23px;bottom:82px;max-width:calc(100vw - 45px)}.caption h1{font-size:36px}.caption p{max-width:270px;font-size:11px}.caption .location{font-size:10px}.footer{padding:15px 20px;font-size:9px}.footer .instructions{display:none}body:not(.panel-closed) .caption{display:none}.panel-head{padding:17px}.tabcontent{padding:17px}.panel-closed .panel{display:none}}
 @media(max-width:760px){#musicDock{top:auto;bottom:65px;left:auto;right:14px;width:300px}.music-active .panel{bottom:335px;min-height:110px}.music-active .caption{display:none}}
@@ -44,17 +44,17 @@ noscript{position:fixed;z-index:100;padding:20px;background:#17271f;inset:0}
  </section>
  <section class="tabcontent" id="musicPanel" role="tabpanel" aria-labelledby="tab-music" hidden>
   <p class="section-label">帶一首歌來森林</p><label for="youtubeURL" class="note">YouTube／YouTube Music 影片或播放清單網址</label><input class="text-input" id="youtubeURL" type="url" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off" spellcheck="false"><button id="loadMusic" class="wide primary">載入播放器</button>
-<p class="note" id="musicStatus" role="status">只在載入音樂時連線至 YouTube。播放受影片授權、廣告及所在地限制。</p><a id="youtubeExternal" class="note" target="_blank" rel="noopener noreferrer" hidden>在 YouTube 開啟 ↗</a><div class="divider"></div><button id="stopMusic" class="wide">移除播放器</button><p class="note">此功能使用官方 YouTube 播放器，並非登入或嵌入整個 YouTube Music 服務。播放器不會被隱藏為純音訊播放。</p>
+<p class="note" id="musicStatus" role="status">只在載入音樂時連線至 YouTube。需透過 localhost 或 GitHub Pages 開啟，播放仍受影片授權、廣告及所在地限制。</p><a id="youtubeExternal" class="note" target="_blank" rel="noopener noreferrer" hidden>在 YouTube 開啟 ↗</a><div class="divider"></div><button id="stopMusic" class="wide">移除播放器</button><p class="note">此功能使用官方 YouTube 播放器，並非登入或嵌入整個 YouTube Music 服務。播放器不會被隱藏為純音訊播放。</p>
  </section>
 </aside>
-<section id="musicDock" aria-label="YouTube 音樂播放器" hidden><div class="dock-title"><span>YOUR FOREST SOUNDTRACK</span><button id="closeDock" aria-label="移除音樂播放器">✕</button></div><div id="playerShell"><div id="playerPlaceholder">你的音樂，自己的步調。<br>貼上網址後，在播放器按下播放。</div><div id="ytPlayer" hidden></div></div></section>
-<footer class="footer"><span class="instructions"><kbd>W A S D</kbd> 移動　 <kbd>拖曳</kbd> 環顧　 <kbd>Shift</kbd> 加速　 <kbd>H</kbd> 沉浸模式</span><span>FOREST ESCAPE · V1.0</span></footer>
+<section id="musicDock" aria-label="YouTube 音樂播放器" hidden><div class="dock-title"><span>YOUR FOREST SOUNDTRACK</span><button id="closeDock" aria-label="移除音樂播放器">✕</button></div><div id="playerShell"><div id="playerPlaceholder">你的音樂，自己的步調。<br>貼上網址後，在播放器按下播放。</div><div id="ytPlayer" hidden></div></div><p id="playerNotice" class="dock-notice" role="status" hidden></p><div class="dock-actions"><button id="retryMusic">重試播放器</button><a id="dockExternal" target="_blank" rel="noopener" hidden>在 YouTube 開啟 ↗</a></div></section>
+<footer class="footer"><span class="instructions"><kbd>W A S D</kbd> 移動　 <kbd>拖曳</kbd> 環顧　 <kbd>Shift</kbd> 加速　 <kbd>H</kbd> 沉浸模式</span><span>FOREST ESCAPE · V1.0.1</span></footer>
 <div id="reticle" aria-hidden="true"></div><div id="toast" role="status" hidden></div>
 <nav id="mobilePad" aria-label="觸控移動"><button data-key="KeyW" aria-label="向前">↑</button><button data-key="KeyA" aria-label="向左">←</button><button data-key="KeyS" aria-label="向後">↓</button><button data-key="KeyD" aria-label="向右">→</button></nav>
 <div class="overlay" id="welcome"><div class="intro"><div class="brand-mark" aria-hidden="true">♧</div><h2>Forest Escape</h2><div class="cn">森林露營放鬆空間</div><p>讓風聲、暮色與一小堆營火，<br>陪你度過一段不被打擾的時間。</p><button id="enterBtn" class="primary" disabled>正在準備森林…</button><div class="loading" id="loadStatus" role="status">載入 3D 引擎與程序化場景</div><p class="footnote">建議以電腦及耳機體驗。點擊進入將啟用環境音。<br>需要連網載入 3D 引擎；建議透過 localhost 或 HTTPS 開啟。</p><button id="retryBtn" hidden>重新載入</button></div></div>
 <dialog id="helpDialog"><h2>在森林裡慢慢走</h2><p>拖曳場景環顧，W A S D 或方向鍵移動，Shift 加速。雙擊場景鎖定滑鼠，按 Esc 退出。觸控裝置可滑動觀看並用左下方方向鍵移動。</p><p>按 H 或「沉浸模式」收起介面；再次按下即可恢復。「緩慢環顧」會自動轉向，手動操作會停止。</p><p>自然音量與 YouTube 音量分開設定。「全部靜音」同時關閉環境音並將已載入的音樂靜音。YouTube 影片若禁止嵌入，可改用外部連結。</p><p>這是程序化 3D 場景與合成聲景的第一版，並非實景攝影或自然錄音。WebGPU 無法使用時將嘗試 WebGL 2。</p><button id="closeHelp">知道了</button></dialog>
 <script type="module">
-// Forest Escape v1.0. All application code, procedural assets and CSS are in this file.
+// Forest Escape v1.0.1. All application code, procedural assets and CSS are in this file.
 // Three.js r180 (MIT) is the only 3D dependency; it is loaded from a fixed-version CDN.
 const $=id=>document.getElementById(id);
 const state={entered:false,keys:new Set(),yaw:0,pitch:0,drag:false,pointerId:null,lastX:0,lastY:0,quality:'medium',time:'dusk',audioOn:false,muted:false};
@@ -89,16 +89,139 @@ $('muteAllBtn').onclick=()=>{state.muted=true;state.audioOn=false;updateAudio();
 function audioTick(t){if(!audio||audio.state!=='running'||!state.audioOn||state.muted)return;if(t-lastCrackle>.12+Math.random()*.4){lastCrackle=t;const n=audio.createBufferSource();n.buffer=noiseBuffer;const f=audio.createBiquadFilter();f.type='highpass';f.frequency.value=1200+Math.random()*1200;const g=audio.createGain(),at=audio.currentTime;g.gain.setValueAtTime(.02+Math.random()*.14,at);g.gain.exponentialRampToValueAtTime(.001,at+.035+Math.random()*.08);n.connect(f);f.connect(g);g.connect(fireGain);n.start(at,Math.random()*4,.14);n.onended=()=>{n.disconnect();f.disconnect();g.disconnect();};}}
 
 // --- YouTube official IFrame API. No authentication or Data API key needed. ---
-let player=null,playerReady=false,ytPromise=null,musicRequest=0;
+// v1.0.1: set the iframe policy BEFORE navigation and use the real HTTP(S) origin.
+// An origin parameter cannot manufacture an HTTP Referer for file:/opaque pages.
+let player=null,playerReady=false,ytPromise=null,musicRequest=0,playerReadyTimer;
 function parseYouTube(raw){
- const u=new URL(raw.trim());if(u.protocol!=='https:'&&u.protocol!=='http:')throw new Error('請貼上有效的 YouTube 網址');const host=u.hostname.toLowerCase().replace(/^www\./,'');if(!['youtube.com','m.youtube.com','music.youtube.com','youtu.be'].includes(host))throw new Error('僅支援 YouTube 或 YouTube Music 網址');
- const parts=u.pathname.split('/').filter(Boolean);let video=host==='youtu.be'?parts[0]:u.searchParams.get('v');if(!video&&['embed','shorts','live'].includes(parts[0]))video=parts[1];const list=u.searchParams.get('list');if(video&&!/^[A-Za-z0-9_-]{11}$/.test(video))throw new Error('影片 ID 格式不正確');if(list&&!/^[A-Za-z0-9_-]{10,120}$/.test(list))throw new Error('播放清單 ID 格式不正確');if(!video&&!list)throw new Error('網址需要包含影片或播放清單');return{video,list};
+ const u=new URL(raw.trim());
+ if(u.protocol!=='https:'&&u.protocol!=='http:')throw new Error('請貼上有效的 YouTube 網址');
+ const host=u.hostname.toLowerCase().replace(/^www\./,'');
+ if(!['youtube.com','m.youtube.com','music.youtube.com','youtu.be'].includes(host))throw new Error('僅支援 YouTube 或 YouTube Music 網址');
+ const parts=u.pathname.split('/').filter(Boolean);
+ let video=host==='youtu.be'?parts[0]:u.searchParams.get('v');
+ if(!video&&['embed','shorts','live'].includes(parts[0]))video=parts[1];
+ const list=u.searchParams.get('list');
+ if(video&&!/^[A-Za-z0-9_-]{11}$/.test(video))throw new Error('影片 ID 格式不正確');
+ if(list&&!/^[A-Za-z0-9_-]{10,120}$/.test(list))throw new Error('播放清單 ID 格式不正確');
+ if(!video&&!list)throw new Error('網址需要包含影片或播放清單');
+ return{video,list};
 }
-function loadYT(){if(window.YT?.Player)return Promise.resolve();if(ytPromise)return ytPromise;ytPromise=new Promise((resolve,reject)=>{const script=document.createElement('script');const timer=setTimeout(()=>{script.remove();ytPromise=null;reject(new Error('YouTube 載入逾時，請檢查網路後重試'));},18000);window.onYouTubeIframeAPIReady=()=>{clearTimeout(timer);resolve();};script.src='https://www.youtube.com/iframe_api';script.onerror=()=>{clearTimeout(timer);script.remove();ytPromise=null;reject(new Error('無法連線至 YouTube'));};document.head.append(script);});return ytPromise;}
-function removePlayer(){$('musicDock').hidden=true;document.body.classList.remove('music-active');if(player){try{player.destroy();}catch{}player=null;}playerReady=false;$('playerShell').innerHTML='<div id="playerPlaceholder">你的音樂，自己的步調。<br>貼上網址後，在播放器按下播放。</div><div id="ytPlayer" hidden></div>';}
-$('loadMusic').onclick=async()=>{let parsed;try{parsed=parseYouTube($('youtubeURL').value);}catch(e){$('musicStatus').textContent=e.message;return;}const request=++musicRequest;$('loadMusic').disabled=true;$('musicStatus').textContent='正在連線至 YouTube…';try{await loadYT();if(request!==musicRequest)return;removePlayer();$('playerPlaceholder').hidden=true;$('ytPlayer').hidden=false;$('musicDock').hidden=false;document.body.classList.add('music-active');const vars={playsinline:1,autoplay:0,controls:1,rel:0};if(location.protocol!=='file:')vars.origin=location.origin;if(parsed.list){vars.listType='playlist';vars.list=parsed.list;}$('youtubeExternal').href=parsed.video?'https://www.youtube.com/watch?v='+parsed.video+(parsed.list?'&list='+parsed.list:''):'https://www.youtube.com/playlist?list='+parsed.list;$('youtubeExternal').hidden=false;player=new YT.Player('ytPlayer',{width:'100%',height:210,videoId:parsed.video||undefined,playerVars:vars,events:{onReady:()=>{if(request!==musicRequest||!player)return;playerReady=true;if(state.muted)player.mute();$('musicStatus').textContent='已載入，請在播放器按下播放。';},onError:e=>{if(request!==musicRequest)return;const messages={2:'影片網址無效',5:'播放器無法播放此內容',100:'影片已移除或設為私人',101:'此內容不允許嵌入',150:'此內容不允許嵌入',153:'播放器無法辨識網站來源，請改用 localhost 或 GitHub Pages'};$('musicStatus').textContent=(messages[e.data]||'播放失敗，錯誤代碼 '+e.data)+'。可使用下方連結開啟。';},onAutoplayBlocked:()=>{if(request!==musicRequest)return;$('musicStatus').textContent='請直接點擊播放器的播放鍵。';}}});}catch(e){$('musicStatus').textContent=e.message;}finally{if(request===musicRequest)$('loadMusic').disabled=false;}};
-$('youtubeURL').onkeydown=e=>{if(e.key==='Enter')$('loadMusic').click();};$('stopMusic').onclick=()=>{musicRequest++;removePlayer();$('loadMusic').disabled=false;$('youtubeExternal').hidden=true;$('musicStatus').textContent='已移除播放器。';};
-
+function getPlayerOrigin(){
+ if(!['http:','https:'].includes(location.protocol)||location.origin==='null'){
+  throw new Error('目前不是透過網站網址開啟。請勿直接雙擊 HTML；請在檔案資料夾執行 python -m http.server 8000，再開啟 http://localhost:8000，或上傳 GitHub Pages。');
+ }
+ if(window.origin==='null')throw new Error('目前預覽環境沒有可辨識的網站來源。請在獨立瀏覽器分頁開啟正式網站網址，或使用 localhost／GitHub Pages。');
+ return location.origin;
+}
+function buildPlayerURL(parsed,origin){
+ const url=new URL(parsed.video?'/embed/'+parsed.video:'/embed','https://www.youtube.com');
+ const params={enablejsapi:'1',origin,playsinline:'1',autoplay:'0',controls:'1',rel:'0'};
+ if(parsed.list){params.listType='playlist';params.list=parsed.list;}
+ Object.entries(params).forEach(([key,value])=>url.searchParams.set(key,value));
+ return url.toString();
+}
+function createPlayerFrame(parsed,origin){
+ const frame=document.createElement('iframe');
+ frame.id='ytPlayer';frame.title='YouTube 音樂播放器';frame.width='300';frame.height='210';
+ // Explicitly set these while disconnected: changing policy after src is too late.
+ frame.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+ frame.setAttribute('allow','autoplay; encrypted-media; picture-in-picture; fullscreen');
+ frame.setAttribute('allowfullscreen','');
+ frame.src=buildPlayerURL(parsed,origin);
+ return frame;
+}
+function musicStatus(message,warning=false){
+ $('musicStatus').textContent=message;
+ $('playerNotice').textContent=message;
+ $('playerNotice').hidden=!warning;
+}
+function revealMusicDock(){
+ $('musicDock').hidden=false;document.body.classList.add('music-active');
+}
+function setMusicLinks(parsed){
+ const url=new URL(parsed.video?'/watch':'/playlist','https://www.youtube.com');
+ if(parsed.video)url.searchParams.set('v',parsed.video);
+ if(parsed.list)url.searchParams.set('list',parsed.list);
+ for(const id of ['youtubeExternal','dockExternal']){$(id).href=url.toString();$(id).hidden=false;}
+}
+function loadYT(){
+ if(window.YT?.Player)return Promise.resolve();
+ if(ytPromise)return ytPromise;
+ ytPromise=new Promise((resolve,reject)=>{
+  const script=document.createElement('script');let settled=false;
+  const finish=error=>{
+   if(settled)return;settled=true;clearTimeout(timer);
+   if(error){script.remove();ytPromise=null;reject(error);}else resolve();
+  };
+  const timer=setTimeout(()=>finish(window.YT?.Player?null:new Error('YouTube 載入逾時，請檢查網路後重試')),18000);
+  window.onYouTubeIframeAPIReady=()=>finish();
+  script.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+  script.src='https://www.youtube.com/iframe_api';
+  script.onerror=()=>finish(new Error('無法連線至 YouTube，可使用「在 YouTube 開啟」或稍後重試'));
+  document.head.append(script);
+ });
+ return ytPromise;
+}
+function removePlayer(){
+ clearTimeout(playerReadyTimer);playerReadyTimer=undefined;
+ $('musicDock').hidden=true;document.body.classList.remove('music-active');
+ if(player){try{player.destroy();}catch{}player=null;}
+ playerReady=false;$('playerNotice').hidden=true;
+ $('playerShell').innerHTML='<div id="playerPlaceholder">你的音樂，自己的步調。<br>貼上網址後，在播放器按下播放。</div><div id="ytPlayer" hidden></div>';
+}
+function playerErrorMessage(code,origin){
+ if(code===153)return 'YouTube 沒有收到可辨識的網站來源（錯誤 153）。目前來源為 '+origin+'。請直接在瀏覽器分頁開啟網站網址後重試；若仍失敗，請檢查預覽環境或瀏覽器是否封鎖來源資訊。';
+ const messages={2:'影片網址無效',5:'播放器無法播放此內容',100:'影片已移除或設為私人',101:'此內容不允許嵌入',150:'此內容不允許嵌入'};
+ return(messages[code]||'播放失敗，錯誤代碼 '+code)+'。可改用下方連結在 YouTube 開啟。';
+}
+$('loadMusic').onclick=async()=>{
+ let parsed;
+ try{parsed=parseYouTube($('youtubeURL').value);}catch(e){musicStatus('請確認網址：'+e.message);return;}
+ const request=++musicRequest;
+ removePlayer();setMusicLinks(parsed);revealMusicDock();
+ let origin;
+ try{origin=getPlayerOrigin();}catch(e){$('playerPlaceholder').textContent='請先透過 localhost 或 GitHub Pages 開啟網頁。';musicStatus(e.message,true);return;}
+ $('loadMusic').disabled=true;musicStatus('正在連線至 YouTube…');
+ try{
+  await loadYT();if(request!==musicRequest)return;
+  const frame=createPlayerFrame(parsed,origin);
+  $('playerShell').replaceChildren(frame);
+  let failed=false;
+  player=new window.YT.Player(frame,{
+   events:{
+    onReady:event=>{
+     if(request!==musicRequest||!player)return;
+     clearTimeout(playerReadyTimer);playerReady=true;
+     if(state.muted)event.target.mute();
+     if(!failed)musicStatus('已載入，請在播放器按下播放。');
+    },
+    onError:event=>{
+     if(request!==musicRequest)return;
+     clearTimeout(playerReadyTimer);failed=true;
+     musicStatus(playerErrorMessage(event.data,origin),true);
+    },
+    onStateChange:event=>{
+     if(request!==musicRequest)return;
+     if(event.data===1){failed=false;musicStatus('正在播放。可在播放器暫停或調整音量。');}
+    },
+    onAutoplayBlocked:()=>{
+     if(request!==musicRequest||failed)return;
+     musicStatus('請直接點擊播放器的播放鍵。');
+    }
+   }
+  });
+  playerReadyTimer=setTimeout(()=>{
+   if(request===musicRequest&&!playerReady&&!failed)musicStatus('播放器尚未回應。可按「重試」，或在 YouTube 開啟；請確認瀏覽器允許連線至 YouTube。',true);
+  },15000);
+ }catch(e){if(request===musicRequest)musicStatus(e.message,true);}
+ finally{if(request===musicRequest)$('loadMusic').disabled=false;}
+};
+$('youtubeURL').onkeydown=e=>{if(e.key==='Enter')$('loadMusic').click();};
+$('stopMusic').onclick=()=>{
+ musicRequest++;removePlayer();$('loadMusic').disabled=false;
+ $('youtubeExternal').hidden=true;$('dockExternal').hidden=true;musicStatus('已移除播放器。');
+};
+$('retryMusic').onclick=()=>$('loadMusic').click();
 $('closeDock').onclick=()=>$('stopMusic').click();
 
 // --- 3D engine loading with a second CDN as a network fallback ---
