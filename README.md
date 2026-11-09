@@ -4,27 +4,10 @@
 
 ## 開啟方式
 
-建議先上傳 GitHub Pages，再用 Chrome 或 Edge 等支援 WebGPU／WebGL 2 的瀏覽器開啟。直接雙擊 HTML 可能遇到本機檔案來源、模組或 YouTube 來源辨識限制。
-
-若電腦已安裝 Python，可在放置 `index.html` 的資料夾開啟終端機，執行：
 
 ```sh
-python -m http.server 8000
+https://lting025.github.io/Forest_Escape.github.io/
 ```
-
-然後在瀏覽器開啟 `http://localhost:8000`。Windows 若找不到 `python`，可改用 `py -m http.server 8000`。此方式只是本機預覽，不會公開網站。
-
-## GitHub Pages 上傳步驟
-
-1. 登入 GitHub，新增儲存庫，名稱例如 `forest-escape`。一般免費帳號可建立 Public 儲存庫供 Pages 使用。
-2. 點 **Add file → Upload files**，將 `index.html` 上傳到儲存庫根目錄。不要只上傳 ZIP，也不要多包一層資料夾。
-3. 點 **Commit changes** 儲存。
-4. 到 **Settings → Pages**，在 **Build and deployment** 的 **Source** 選擇 **Deploy from a branch**。
-5. 將 **Branch** 設為 `main`、資料夾設為 `/ (root)`，按 **Save**。
-6. 等待部署完成。網站網址通常為 `https://你的帳號.github.io/forest-escape/`，以 GitHub Pages 顯示的實際網址為準。
-7. 在自己的電腦測試一次，再用無痕視窗或另一台電腦開啟。作業可附上儲存庫網址、網站網址與規格書。
-
-若網站回傳 404，先確認檔名是小寫 `index.html`、放置位置與 Pages 發布來源一致，再查看 GitHub 的 Actions／Pages 部署狀態。若畫面載入失敗，確認網路能連線至 `cdn.jsdelivr.net` 或 `unpkg.com`，並開啟瀏覽器硬體加速。
 
 ## 操作
 
